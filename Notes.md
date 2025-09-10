@@ -1,9 +1,19 @@
 # Portfolio Website - NextJS
 
+## Building portfolio step by step
+
+- Adding Assets, google fonts & change metadata:
+  - Let's clear the default project & add the assets for this project - get the assets from [GreatStack](https://greatstack.dev/assets/next-js-portfolio-website)
+  - the `assets.js` file in assets folder - we have all the imported images in the folder, and exported the images using the `assets` object - which has all the images , so that we can easily use these images in our project web page. then we have `workData` using that we can display the Work Card & `serviceData` to display services we provide & we have other data `infoList` and `toolsData`. **WE WILL BE USING THIS DATA TO DISPLAY CONTENT ON OUR WEB PAGE**
+  - Then go to `app/layout.js` - where we can add the page title and description
+  - Now clear the data in `app/page.js` - return statement and add fragments `<></>` - Now our web page is clear.
+  - Add Google fonts: Go to `app/layout.js` - add these fonts and it's weight info - `Outfit, Ovo` -> then go to `app/global.css` - except `@import "tailwindcss";` remove everything related to css properties & add `*` which will select all the html elements & we provide `font-family: Outfit` - applies Outfit font for all the html elements.
+
 ## ProjectSetup & Commands run or used
 
 - Reference Docs:
   - [Create a new Next.js app and run it locally.](https://nextjs.org/docs/app/getting-started/installation)
+  - [Assets](https://greatstack.dev/assets/next-js-portfolio-website)
 
 ```bash
 C:\Users\abhis\Desktop\NextJs Projects\portfolio>pnpm create next-app@latest .
